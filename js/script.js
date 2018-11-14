@@ -10,7 +10,7 @@ function Recipe(id, label, description, portion, preparation, cook, level, spice
     this.method = method;
     this.ingredients = ingredients;
 
-    //getter - access properties in an object
+    //getter - accesses properties in an object
     this.getId = function() {
         console.log(this.id);
     }
