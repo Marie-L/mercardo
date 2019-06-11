@@ -1,4 +1,5 @@
-function ingredient (label, type, id) {
+//CLASS
+function Ingredient (label, type, id) {
     this.label = label;
     this.type = type;
     this.id = id;
@@ -16,9 +17,9 @@ console.log(this.type);
 };
 
 //INSTANTIATION
-//new object from Recipe function/Class
+//new object (object instances)from Recipe function/Class
 
-var chicken = new ingredient (Chicken, poultry, 008);
-var rice = new ingredient (Rice, poultry, 009);
+var chicken = new Ingredient (Chicken, poultry, 008);
+var rice = new Ingredient (Rice, poultry, 009);
 
-ingredient();
+Ingredient();
