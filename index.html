@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--  the character set is described as UTF-8, an efficient form of unicode in which in the English language characters (ASCII / American Standard Code for Information Interchange) require only a single byte to be represented    -->
     <meta charset="UTF-8">
     <title>Mercardo</title>
     <script type ="text/javascript" src="js/script.js"></script>
@@ -8,16 +9,34 @@
 </head>
 <body onload="init()">
 
+<!-- conditional comments check whether the browser is Internet Explorer and the version is earlier than or equal to 7-->
+<!-- [if lte IE 7]><html class="no-js ie6" lang="en"><![endif] -->
+
 <!-- <main> defines the dominant content of the body -->
 <main>
 
     <!-- <header> defines the top section of the page -->
-    <header>
+    <!-- class=" " is a global attribute, An attribute is a name="value" pair -->
+    <header class="main-header">
         <h1>Mercado</h1>
+        <!-- self closing tag -->
+<br/>
 
     <!-- <s> inline text semantic mark up, renders text with a strike through line -->
     <h3> select your <s>menu</s> recipes for the week</h3>
     </header>
+
+    <p>What kind of recipe are you looking for? </p>
+
+    <form>
+        <input type="checkbox" name="breakfast" value="breakfast"/> Breakfast <br/>
+        <!-- 'checked' is an example of a boolean attribute-->
+        <input type="checkbox" name="main" value="main" checked/> Main Meal <br/>
+        <input type="checkbox" name="side" value="side"/> Side Dish <br/>
+        <input type="checkbox" name="juice" value="juice"/> Juice <br/>
+        <!-- &amp; is a HTML entity used for displaying special characters-->
+        <input type="checkbox" name="salad" value="salad"/> Salads &amp; Veggies <br/>
+    </form>
 
     <!-- <nav> defines the navigation to other pages within the site -->
     <nav>
