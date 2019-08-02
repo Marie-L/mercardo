@@ -36,14 +36,27 @@
         <input type="checkbox" name="side" value="side"/> Side Dish <br/>
         <input type="checkbox" name="juice" value="juice"/> Juice <br/>
         <!-- &amp; is a HTML entity used for displaying special characters-->
-        <input type="checkbox" name="salad" value="salad"/> Salads &amp; Veggies <br/>
+        <input type="checkbox" name="salad" value="salad"/> Salads &amp; Veggies<br/>
     </form>
 
-    <
+<h2>Meals</h2>
+    <ul>
+        <!-- to link internally add an id to the element and include its name preceeded by # symbol in the href -->
+        <!-- to add an img to a link place the img element inside the anchor element -->
+        <li><a href="#breakfast"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/veggie_breakfast_fry_up_66913_16x9.jpg" alt=""breakfast/></a></li>
+        <li><a href="#mains">main</a></li>
+        <li><a href="#sides">sides</a></li>
+        <li><a href="#juices">juices</a></li>
+        <li><a href="#salads">salads</a></li>
+        <li><a href="#dessert">desserts</a></li>
+        <li><a href="#sauces">sauces</a></li>
+    </ul>
 
     <!-- <nav> defines the navigation to other pages within the site -->
     <nav>
-    <h4>Breakfast</h4>
+    <h4 id="breakfast">Breakfast</h4>
+
+
     <ul>
         <li><a>American Pancakes</a></li>
         <li><a>Whole Grain cereal</a></li>
@@ -55,9 +68,10 @@
     </nav>
 
     <nav>
-        <h4>Mains</h4>
+        <h4 id="mains">Mains</h4>
     <ul>
-        <li><a href="lasagne.html">Lasagne</a></li>
+        <!-- the target attribute controls the link behaviour -->
+        <li><a href="lasagne.html" target="_blank">Lasagne</a></li>
         <li><a>Picadillo with rice</a></li>
         <li><a>Pollo criollo with rice</a></li>
         <li><a>Lamb stew with rice</a></li>
@@ -69,8 +83,9 @@
     </ul>
 
     </nav>
+
     <nav>
-    <h4>Sides</h4>
+    <h4 id="sides">Sides</h4>
     <ul>
         <li><a>potato wedges</a></li>
         <li><a>BBQ chicken</a></li>
@@ -87,7 +102,7 @@
     </nav>
 
 <nav>
-    <h4>Juices</h4>
+    <h4 id="juices">Juices</h4>
     <ul>
         <li><a>Fresh lemonade</a></li>
         <li><a>Fresh orange juice</a></li>
@@ -96,7 +111,7 @@
     </nav>
 
     <nav>
-    <h4>Salads & Veggies </h4>
+    <h4 id="salads">Salads & Veggies </h4>
     <ul>
         <li><a>vinegrette</a></li>
         <li><a>Avocado salad</a></li>
@@ -106,7 +121,7 @@
     </nav>
 
     <nav>
-    <h4>Dessert</h4>
+    <h4 id="dessert">Dessert</h4>
     <ul>
         <li><a>Chocolate Fudge Cake</a></li>
         <li><a>Cupcakes</a></li>
@@ -122,7 +137,7 @@
     </nav>
 
     <nav>
-        <h4>Sauces</h4>
+        <h4 id="sauces">Sauces</h4>
         <ul>
             <li><a>onion relish</a></li>
             <li><a>mango chutney</a></li>
@@ -131,8 +146,13 @@
         </ul>
     </nav>
 </main>
+<!-- iframe element is used to embed an inline frame that contains an HTML document can be loaded-->
+<!-- sandboxing embedded content prevents malware and pop-ups-->
+<iframe sandbox="allow-scripts allow-same-origin" src="https://dry-escarpment-35177.herokuapp.com/" width="800px" height="300px"></iframe>
 <footer>
     Exam Preparation project - 2019
+    <!-- mailto protocol can be used to send emails. It accepts the params: subject, cc, bcc and body. ? is added after the email address and separate the params using &-->
+    <a href="mailto:ml_annan@hotmail.com?subject=Hey&body=i want to find out more about your exam preparartion">Find out more about this exam preparation</a>
 </footer>
 </body>
 </html>
