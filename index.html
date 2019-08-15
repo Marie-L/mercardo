@@ -138,7 +138,7 @@
         <img src="Assets/img/strawberry.gif" alt="strawberry" width="400" height="300">
         <embed type="video/quicktime" src="/Assets/video/strawberry.mp4" width="400" height="300">
         <!--
-  embedding plug-in content
+  embedding plug-in content - however this error message will appear 'adobe flash player is blocked'
 
         -->
     </nav>
@@ -156,6 +156,19 @@
 <!-- iframe element is used to embed an inline frame that contains an HTML document can be loaded-->
 <!-- sandboxing embedded content prevents malware and pop-ups-->
 <iframe sandbox="allow-scripts allow-same-origin" src="https://dry-escarpment-35177.herokuapp.com/" width="800px" height="300px"></iframe>
+
+<!-- image map -->
+<img src="Assets/img/fried-egg.jpg" width="200px" height="200px" alt="egg" usemap="#fried-egg">
+<map name="fried-egg">
+    <area shape="circle" coords="0,82,126" href="https://www.google.com/search?q=fried+egg&rlz=1C5CHFA_enGB845GB847&oq=fried+&aqs=chrome.0.69i59j69i57j0l4.1941j0j7&sourceid=chrome&ie=UTF-8">
+</map>
+
+<!-- object tag has similar purpose to the <embed> tag and is used to embed an HTML document and multimedia-->
+
+<object data="Assets/audio/cartoon-birds-2_daniel-simion.mp3" name="cartoon-birds" width="300px" height="60px">
+</object>
+
+
 <footer>
     Exam Preparation project - 2019
     <!-- mailto protocol can be used to send emails. It accepts the params: subject, cc, bcc and body. ? is added after the email address and separate the params using &-->
