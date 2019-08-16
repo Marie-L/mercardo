@@ -4,6 +4,13 @@
     <!--  the character set is described as UTF-8, an efficient form of unicode in which in the English language characters (ASCII / American Standard Code for Information Interchange) require only a single byte to be represented    -->
     <meta charset="UTF-8">
     <title>Mercardo</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet">
+
     <script type ="text/javascript" src="js/script.js"></script>
     <script type ="text/javascript" src="js/classes/ingredients.js"></script>
 </head>
@@ -13,37 +20,9 @@
 <!-- [if lte IE 7]><html class="no-js ie6" lang="en"><![endif] -->
 
 <!-- <main> defines the dominant content of the body -->
-<main>
-
-    <!-- <header> defines the top section of the page -->
-    <!-- class=" " is a global attribute, An attribute is a name="value" pair -->
-    <header class="main-header">
-        <!--&nbsp; is a nonbreaking space entity used to prevent automatic line break between words -->
-        <h1>Mercado&nbsp;</h1><h3>Market&nbsp;(in&nbsp;Spanish)</h3>
-        <!-- self closing tag -->
-<hr/>
-
-    <!-- <s> inline text semantic mark up, renders text with a strike through line -->
-    <h3> select your <s>menu</s> recipes for the week</h3>
-    </header>
-
-    <p>What kind of recipe are you looking for? </p>
-
-    <form>
-        <input type="checkbox" name="breakfast" value="breakfast"/> Breakfast <br/>
-        <!-- 'checked' is an example of a boolean attribute-->
-        <input type="checkbox" name="main" value="main" checked/> Main Meal <br/>
-        <input type="checkbox" name="side" value="side"/> Side Dish <br/>
-        <input type="checkbox" name="juice" value="juice"/> Juice <br/>
-        <!-- &amp; is a HTML entity used for displaying special characters-->
-        <input type="checkbox" name="salad" value="salad"/> Salads &amp; Veggies<br/>
-    </form>
-
-<h2>Meals</h2>
+<nav class="main-nav">
     <ul>
-        <!-- to link internally add an id to the element and include its name preceeded by # symbol in the href -->
-        <!-- to add an img to a link place the img element inside the anchor element -->
-        <li><a href="#breakfast"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/veggie_breakfast_fry_up_66913_16x9.jpg" alt=""breakfast/></a></li>
+        <li><a href="#breakfast">breakfast</a></li>
         <li><a href="#mains">main</a></li>
         <li><a href="#sides">sides</a></li>
         <li><a href="#juices">juices</a></li>
@@ -51,11 +30,22 @@
         <li><a href="#dessert">desserts</a></li>
         <li><a href="#sauces">sauces</a></li>
     </ul>
+</nav>
+<main>
 
+    <!-- <header> defines the top section of the page -->
+    <!-- class=" " is a global attribute, An attribute is a name="value" pair -->
+    <header class="main-header">
+        <h1>Mercardo </h1>
+
+    <!-- <s> inline text semantic mark up, renders text with a strike through line -->
+    <h3> select your <s>menu</s> recipes for the week</h3>
+    </header>
+
+<div class="card">
     <!-- <nav> defines the navigation to other pages within the site -->
     <nav>
     <h4 id="breakfast">Breakfast</h4>
-
 
     <ul>
         <li><a>American Pancakes</a></li>
@@ -66,7 +56,8 @@
         <li><a>Healthy English</a></li>
     </ul>
     </nav>
-
+    </div>
+    <div class="card">
     <nav>
         <h4 id="mains">Mains</h4>
     <ul>
@@ -81,9 +72,11 @@
         <li><a>Baked potato, cheese & veg </a></li>
         <li><a>macaroni cheese </a></li>
     </ul>
-
     </nav>
+    </div>
 
+
+    <div class="card">
     <nav>
     <h4 id="sides">Sides</h4>
     <ul>
@@ -100,7 +93,9 @@
         <li><a>garlic bread</a></li>
     </ul>
     </nav>
+    </div>
 
+    <div class="card">
 <nav>
     <h4 id="juices">Juices</h4>
     <ul>
@@ -109,7 +104,9 @@
         <li><a>Watermelon juice</a></li>
     </ul>
     </nav>
+    </div>
 
+    <div class="card">
     <nav>
     <h4 id="salads">Salads & Veggies </h4>
     <ul>
@@ -119,7 +116,9 @@
         <li><a>Steamed vegetables</a></li>
     </ul>
     </nav>
+    </div>
 
+    <div class="card">
     <nav>
     <h4 id="dessert">Dessert</h4>
     <ul>
@@ -134,15 +133,10 @@
         <li><a>peaches</a></li>
         <li><a>lemon drizzle cake</a></li>
     </ul>
-
-        <img src="Assets/img/strawberry.gif" alt="strawberry" width="400" height="300">
-        <embed type="video/quicktime" src="/Assets/video/strawberry.mp4" width="400" height="300">
-        <!--
-  embedding plug-in content - however this error message will appear 'adobe flash player is blocked'
-
-        -->
     </nav>
+    </div>
 
+    <div class="card">
     <nav>
         <h4 id="sauces">Sauces</h4>
         <ul>
@@ -152,7 +146,17 @@
             <li><a>hummus</a></li>
         </ul>
     </nav>
+    </div>
 </main>
+        <img src="Assets/img/strawberry.gif" alt="strawberry" width="400" height="300">
+        <embed type="video/quicktime" src="/Assets/video/strawberry.mp4" width="400" height="300">
+        <!--
+  embedding plug-in content - however this error message will appear 'adobe flash player is blocked'
+
+        -->
+
+
+
 <!-- iframe element is used to embed an inline frame that contains an HTML document can be loaded-->
 <!-- sandboxing embedded content prevents malware and pop-ups-->
 <iframe sandbox="allow-scripts allow-same-origin" src="https://dry-escarpment-35177.herokuapp.com/" width="800px" height="300px"></iframe>
@@ -168,11 +172,39 @@
 <object data="Assets/audio/cartoon-birds-2_daniel-simion.mp3" name="cartoon-birds" width="300px" height="60px">
 </object>
 
+<p>What kind of recipe are you looking for? </p>
 
+<form>
+    <input type="checkbox" name="breakfast" value="breakfast"/> Breakfast <br/>
+    <!-- 'checked' is an example of a boolean attribute-->
+    <input type="checkbox" name="main" value="main" checked/> Main Meal <br/>
+    <input type="checkbox" name="side" value="side"/> Side Dish <br/>
+    <input type="checkbox" name="juice" value="juice"/> Juice <br/>
+    <!-- &amp; is a HTML entity used for displaying special characters-->
+    <input type="checkbox" name="salad" value="salad"/> Salads &amp; Veggies<br/>
+</form>
+
+<h2>Meals</h2>
+<ul>
+    <!-- to link internally add an id to the element and include its name preceeded by # symbol in the href -->
+    <!-- to add an img to a link place the img element inside the anchor element -->
+    <li><a href="#breakfast"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/veggie_breakfast_fry_up_66913_16x9.jpg" alt=""breakfast/></a></li>
+    <li><a href="#mains">main</a></li>
+    <li><a href="#sides">sides</a></li>
+    <li><a href="#juices">juices</a></li>
+    <li><a href="#salads">salads</a></li>
+    <li><a href="#dessert">desserts</a></li>
+    <li><a href="#sauces">sauces</a></li>
+</ul>
+
+<!-- self closing tag (void tag -->
+<hr/>
 <footer>
-    Exam Preparation project - 2019
+    <p>Exam Preparation project - 2019</p>
     <!-- mailto protocol can be used to send emails. It accepts the params: subject, cc, bcc and body. ? is added after the email address and separate the params using &-->
-    <a href="mailto:ml_annan@hotmail.com?subject=Hey&body=i want to find out more about your exam preparartion">Find out more about this exam preparation</a>
+    <a href="mailto:ml_annan@hotmail.com?subject=Hey&body=i want to find out more about your exam preparartion">Find out more about this exam preparation</a><!--&nbsp; is a non-breaking space entity used to prevent automatic line break between words -->
+    <!-- copy entity -->
+    <p>&copy;Mercado&nbsp;</p><p>Market&nbsp;(in&nbsp;Spanish)</p>
 </footer>
 </body>
 </html>

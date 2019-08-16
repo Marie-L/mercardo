@@ -1,0 +1,14 @@
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(2, 42, 85, 0.9);
+    transition: 0.3s;
+    width: 30%;
+    float:left;
+    margin: 0px 30px 10px 0px ;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
