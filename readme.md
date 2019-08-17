@@ -56,19 +56,37 @@ Construct well-formed style sheets that conform to industry best practices
 
 - Reusing rules and rule sets; commenting; testing on multiple browsers; web safe fonts
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Introducing CSS3
+- [ ] Defining and applying a style
+- [ ] Adding comments within a style sheet
+- [ ] Creating an inline style
+- [ ] Creating and embedded style
+- [ ] Creating an external style sheet
+- [ ] Using media to specify the target device
+- [ ] Imported style sheets from other style sheets
+- [ ] Using @font-face rule to import fonts
+- [ ] Creating a selector element type selector
+- [ ] Creating an id selector
+- [ ] Creating a class selector
+- [ ] Using universal selector
+- [ ] Using descendent selectors
+- [ ] Using child selectors
+- [ ] Using pseudo-class and pseudo-element selectors
+- [ ] Grouping selectors
+- [ ] Using subsequent adjacent sibling selectors
+- [ ] Using the subsequent sibling selector
+- [ ] Using an attribute selector
+- [ ] Using an attribute value selector
+- [ ] Using the attribute contains value selector
+- [ ] Using the attribute value starts with selector
+- [ ] Using the attribute contains value in list selector
+- [ ] Understanding the browser's built-in styles
+- [ ] Extending browser styles with user styles
+- [ ] Working with importing styles
+- [ ] How do styles cascade?
+- [ ] Using specificity
+- [ ] Understanding inheritance
+- [ ] Using the inherit value
 
 #### Structure Documents Using HTML
 
@@ -206,37 +224,6 @@ Analyze styles that implement a simple responsive layout
 
 - Units of measure; responsive effects with CSS, including viewport and media query; percentages versus pixels; frameworks and templates; max width
 
-- [ ] Introducing CSS3
-- [ ] Defining and applying a style
-- [ ] Adding comments within a style sheet
-- [ ] Creating an inline style
-- [ ] Creating and embedded style
-- [ ] Creating an external style sheet
-- [ ] Using media to specify the target device
-- [ ] Imported style sheets from other style sheets
-- [ ] Using @font-face rule to import fonts
-- [ ] Creating a selector element type selector
-- [ ] Creating an id selector
-- [ ] Creating a class selector
-- [ ] Using universal selector
-- [ ] Using descendent selectors
-- [ ] Using child selectors
-- [ ] Using pseudo-class and pseudo-element selectors
-- [ ] Grouping selectors
-- [ ] Using subsequent adjacent sibling selectors
-- [ ] Using the subsequent sibling selector
-- [ ] Using an attribute selector
-- [ ] Using an attribute value selector
-- [ ] Using the attribute contains value selector
-- [ ] Using the attribute value starts with selector
-- [ ] Using the attribute contains value in list selector
-- [ ] Understanding the browser's built-in styles
-- [ ] Extending browser styles with user styles
-- [ ] Working with importing styles
-- [ ] How do styles cascade?
-- [ ] Using specificity
-- [ ] Understanding inheritance
-- [ ] Using the inherit value
 - [ ] Working with CSS properties
 - [ ] Working with CSS colors
 - [ ] Using the rgb function
