@@ -1,0 +1,692 @@
+<!DOCtype>
+<html lang="en">
+<head>
+    <title> Understand HTML Fundamentals </title>
+</head>
+<body>
+<h1>Understand HTML Fundamentals</h1>
+
+<h2>Understanding HTML, XHTML, and HTML5</h2>
+
+<h3>HTML</h3>
+
+<ul>
+    <li>HTML is an acronym for Hypertext Markup Language</li>
+    <li>HTML roots are from an older markup language that was used in document publishing, called <em>SGML (Standard Generalized Markup Language)</em>.</li>
+    <li> Like SGML, many but not all HTML tags have a matching end tag. HTML tags such as <code> br </code> and <code>img </code> did not have ending tags because the <code> br </code> just rendered a line break, and the <code> img </code> tag just rendered an image</li>
+    <li>One interesting aspect of HTML and its relationship with browsers was that browsers were designed to be backward compatible and forward compatible. Creating a browser that is backward compatible is relatively easy because the problem domain is known, but how is forward compatibility accomplished? Browsers were created to ignore tags that they didn’t recognize. For example, if a browser came across a <code> xyz </code>  tag that it didn’t recognize, it would skip over the tag as though it didn’t exist.</li>
+</ul>
+
+<h3>XML & XHTML</h3>
+<ul>
+    <li>XML (eXtensible Markup Language) looks a lot like HTML because both languages use tags. However, there are several big differences. First, XML always requires matching end tags for every tag, although you can use a shortcut notation to denote a starting tag and ending tag together. </li>
+    <li>XML doesn’t have a defined set of tag names, so you create your own tag names, and the tags can represent anything. </li>
+    <li>There are many other differences, one other large difference is that XML uses XML Schema Definition (XSD) technology, which validates the format of an XML document to ensure that all aspects of a document are valid before processing the XML document. HTML’s lack of rigid structure prevented the creation of a technology such as XSD that could validate HTML documents.</li>
+    <li>The World Wide Web Consortium, also known as W3C (http://ww.w3c.org), is responsible for developing open standards for the web. </li>
+    <li>The W3C introduced XHTML to solve the problems in HTML, which was up to version 4. XHTML is an XML-based specification that tightened the HTML specification to make HTML adhere to the XML rules that describe a well-formed document, such as having a matching end tag for each starting tag. This meant that XHTML documents could be validated by using XSD files and could be edited by using XML tools.</li>
+    <li>Although XHTML solved some problems, other problems still needed a solution. There was a need for an increasing amount of multimedia on the web.</li>
+    <li>They wanted their webpages to be highly interactive, with video and animations. Browsers added programmable support by providing JavaScript, but early versions of JavaScript were slow and difficult to program. </li>
+    <li>The browsers became extensible by providing an application programming interface (API) that would allow third parties to create plug-ins that could run in the browser’s environment. </li>
+    <li>One such plug-in is Flash, which has a very large installed base. Flash provided a development environment that could be used to create a rich user experience. Although third-party plug-ins solved the immediate need for technology to create flashy websites, there was still a need for tighter integration of multimedia with the browser, especially on small devices.</li>
+</ul>
+
+<h3>HTML5</h3>
+
+<ul>
+    <li>HTML5 does not originate from XHTML; HTML5 originates from HTML 4.01. </li>
+    <li>As a rule, however, applying XHTML rules to your HTML5 will make your web page more compliant with a wider variety of browsers and webpage readers, generators, and validators. </li>
+    <li>HTML5 contains most of the tags from HTML 4.01, but many of the tags have been redefined to be semantic tags.</li>
+    <li>HTML5 represents a reinvented HTML, CSS, and JavaScript in a way that solves the need for rich, interactive websites that can play audio and video and support animations from within the browser without the need for plug-ins. </li>
+</ul>
+
+<h3>Introducing semantic markup</h3>
+
+<ul>
+    <li>Semantic is defined as the study of meaning of linguistic expressions. In the context of HTML, that means that tags provide meaning to the content in the HTML document. Tags do not provide presentation; they provide meaning.</li>
+    <li>HTML tags provide a meaningful structure, but do not provide presentation. Remember that separation is accomplished by providing structure in your HTML5 document, maintaining presentation in your CSS3 style sheet, and maintaining behavior in your JavaScript file.</li>
+    <li>How can you maintain separation when tags such as  <code>b</code> (bold) and <code> i </code> (italic) exist? After all, these tags have presentation in their definitions. </li>
+    <li>The W3C now defines the <code> b </code> tag as “a span of text offset from its surrounding content without conveying any extra emphasis or importance, and for which the conventional typographic presentation is bold text; for example, keywords in a document abstract, or product names in a review.” </li>
+    <li> The W3C now defines the <code> i </code> tag as “a span of text offset from its surrounding content without conveying any extra emphasis or importance, and for which the conventional typographic presentation is italic text; for example, a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, or a ship name.” </li>
+    <li>Do these tags need to render as bold and italic? Not at all, and the new definitions of these tags attempt to specify this.</li>
+</ul>
+
+<h3>Working with elements</h3>
+<ul>
+<li>An element is composed of a beginning tag, an ending tag, and the content between the tags.</li>
+    <li>HTML tag names are not case sensitive. If you’re working on an older webpage, you might notice that it was written using uppercase tag names. Browsers will treat a <code>b</code> tag and a <code>B</code> tag the same.</li>
+    <li>To comply with as many standards as possible, consider using lowercase tag names for any webpages you create by convention because the W3C recommends lowercase tag names in HTML 4.01 and requires lowercase tag names in XHTML. Although HTML5 does not mandate lowercase tag names, lowercase tag names are recommended.</li>
+</ul>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">ELEMENT REFERENCE</a>
+
+<h3>Adding Attributes to elements</h3>
+
+<ul>
+    <li>The begin tag can contain additional data in the form of an attribute.</li>
+    <li>An attribute is a name=”value” pair in which name is unique within the tag and value is always enclosed within either single quotes or double quotes. </li>
+    <li>You can add many attributes to the begin tag. You can also alternate using single quotes and double quotes, which is especially beneficial when you need to embed single or double quotes within the value of the attribute. </li>
+    You can also have Boolean attributes that contain the attribute name but no value.</li>
+</ul>
+
+<p>Here is an example of an element that has attributes.</p>
+
+<code>
+    <xmp> <div id="main" class='mainContent'></div></xmp>
+</code>
+
+<ul>
+    <li>In this example, id and class are attributes.</li>
+    <li>The id attribute uniquely identifies an element within an HTML document. </li>
+    <li>The class attribute specifies a named CSS style that should be applied to the element.</li>
+</ul>
+
+<h3>Working with boolean attributes</h3>
+<ul>
+    <li>Some attributes are Boolean attributes, which means that the mere presence of the attribute indicates that an option is set.</li>
+</ul>
+
+<p>Some examples of Boolean attributes are as follows.</p>
+
+<ul>
+    <li><b>checked</b>Used with the check box and option button to indicate selection</li>
+    <li><b>selected</b>Used to indicate which option is selected in a drop-down or select list</li>
+    <li><b>disabled</b>Used to disable input, text area, button, select, option, or opt group</li>
+    <li><b>readonly</b>Used to prevent the user from typing data into a text box, password, or text area</li>
+</ul>
+
+<ul>
+    <li>There are different ways to indicate a Boolean attribute.</li>
+    <li>One way is to use the minimized form, by which you just add the attribute name into the starting tag but don’t provide a value. </li>
+</ul>
+
+<p>Here is an example of minimized form when setting a check box to selected:</p>
+
+<code>
+    <xmp>
+        <input type="checkbox" name="fruit" value="Apple" checked />
+    </xmp>
+</code>
+
+<ul>
+    <li>Another way to indicate a Boolean attribute is to use quoted form, in which you provide either an empty value or the name of the attribute as its value.</li>
+</ul>
+
+<p>Here are examples of both.</p>
+
+
+<code>
+    <xmp>
+        <input type="checkbox" name="fruit" value="Apple" checked='' />
+        <input type="checkbox" name="fruit" value="Apple" checked='checked' />
+    </xmp>
+</code>
+
+<ul>
+    <li>The latter seems redundant but is usually considered to be the preferred way to represent the Boolean attribute. </li>
+</ul>
+
+<h3> HTML5 Global Attribute Reference</h3>
+
+<ul>
+    <li>HTML5 defines a set of named attributes that can be applied to any HTML5 element. </li>
+</ul>
+
+<p>These elements are called global attributes, and each has a very specific meaning, as follows.</p>
+
+<ul>
+    <li><b>accesskey</b> Enables you to either specify a shortcut key to which to jump or to set focus to an element. As a rule, you shouldn’t use this because it can cause problems with other technologies.</li>
+    <li><b>class</b> Used with CSS to specify one or more class names for an element.</li>
+    <li><b>contenteditable</b> Specifies that the content within the tag can be edited.</li>
+    <li><b>contextmenu</b> User can right-click an element to display a menu. At the time of this writing, no browser supports this attribute.</li>
+    <li><b>dir</b> Enables you to specify left-to-right or right-to-left text direction for the content in an element.</li>
+    <li><b>draggable</b>b Specifies whether an element is draggable.</li>
+    <li><b>dropzone</b> Enables you to specify the behavior of the dragged data when it’s dropped. Data can be copied, moved, or linked.</li>
+    <li><b>hidden</b> Specifies that an element is not relevant.</li>
+    <li><b>id </b>Specifies a unique id for an element.</li>
+    <li><b>lang</b> Specifies the language (English, French, German, and so on) of the element’s content.</li>
+    <li><b>spellcheck</b>Used with the lang attribute to enable you to indicate whether the element is to have its spelling and grammar checked.</li>
+    <li><b>style</b> Specifies an inline CSS style for the element.</li>
+    <li><b>tabindex</b> Sets the tabbing order of the element.</li>
+    <li><b>title</b> Provides extra information about the element.</li>
+</ul>
+
+<h3>Working with Self-closing tags</h3>
+
+<ul>
+    <li>You can represent any element that contains no content as a self-closing tag.</li>
+    <li>A self-closing tag is a beginning tag and an ending tag in one. </li>
+    <li>You end the starting tag with a space, slash, and greater-than symbol. </li>
+</ul>
+
+<p>For example, the <code>br</code>  element cannot have any content, so here is the beginning and ending tag in one:</p>
+
+<code>
+    <xmp>
+        <br />.
+    </xmp>
+</code>
+
+<h3>Working with void elements</h3>
+
+<ul>
+    <li>Elements are not required to have content, but some elements cannot have content. </li>
+    <li>These are called void elements. For example, the <code>br</code>  tag represents a line break and cannot have any content.</li>
+    <li></li>
+</ul>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Empty_element">Void Element reference</a>
+
+<h3>Adding expando attributes</h3>
+
+<ul>
+    <li>Expando attributes are attributes that you define. Expando attributes are also known as author-defined attributes or simply as custom attributes. </li>
+    <li>Any time you want to attach data to an HTML tag, you can just create an attribute with the name of your choice and assign the data. However, the name you create might conflict with either an existing W3C-defined attribute name or a future W3C-defined attribute name. To ensure that you have no existing or future naming conflict, assign a name that is prefixed with <em> “data-“</em></li>
+</ul>
+
+<code>
+    <xmp>
+        <span data-customerNumber='123'>Contoso Ltd</span>
+    </xmp>
+</code>
+
+<h3>Adding Comments</h3>
+
+<ul>
+    <li>You can add comments to your HTML source by using the following syntax.</li>
+</ul>
+
+<code>
+    <xmp>
+        <!--comment here -->
+    </xmp>
+</code>
+
+<h3>Adding conditional comments</h3>
+
+<ul>
+    <li>Only Internet Explorer recognizes conditional comments, which enable you to add a browser-specific source that executes if the browser is Internet Explorer but is treated as a comment by other browsers. </li>
+</ul>
+
+<p>You can add conditional comments to your HTML document by using the following syntax.</p>
+
+<code>
+    <xmp>
+        <!--[if lte IE 7]>  <html class="no-js ie6" lang="en"> <![endif]-->
+        <!--[if lt IE 7]>   <html class="no-js ie6" lang="en"> <![endif]-->
+        <!--[if IE 8]>      <html class="no-js ie8" lang="en"> <![endif]-->
+        <!--[if gt IE 8]>   <html class="no-js" lang="en">     <![endif]-->
+        <!--[if gte IE 9]>  <html class="no-js" lang="en">     <![endif]-->
+        <!--[if !IE]> -->   This is not Internet Explorer!<br />
+    </xmp>
+</code>
+
+<ul>
+    <li>The first conditional comment checks whether the browser is Internet Explorer and the version is earlier than or equal to 7</li>
+    <li>The next conditional comment checks whether the browser is Internet Explorer and the version is earlier than 7</li>
+    <li>The next conditional comment checks whether the browser is Internet Explorer and the version is 8.</li>
+    <li>The next conditional comment checks whether the browser is Internet Explorer and the version is later than 8, followed by a check to see whether the browser is Internet Explorer and the version is later than or equal to 9. </li>
+    <li>The last line checks whether the browser is not Internet Explorer. Note that the syntax of the last line is different from the others.</li>
+</ul>
+
+<h3>Basic document structure</h3>
+
+<ul>
+    <li>Every HTML document should have a basic structure that consists of a <code>!DOCTYPE html</code> declaration, which historically has indicated the version of HTML to the browser.</li>
+    <li>In HTML5, this indicates to the browser that it should be in no-quirks mode. No-quirks mode causes the browser to operate in an HTML5-compliant manner.</li>
+    <li>Next is the root <code>html</code> element, which contains the <code>head</code>element and the <code>body</code> element.</li>
+<li>The <code>head</code> element contains hidden information such as metadata that describes the HTML document and instructions. The following is an example of metadata in the <code>head</code> element.</li>
+</ul>
+
+<code>
+    <xmp>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>title here</title>
+        </head>
+        <body>
+        content here
+        </body>
+        </html>
+
+    </xmp>
+</code>
+
+
+
+<ul>
+    <li>In this example, the <code>meta</code> element describes the character set as utf-8, which is an efficient form of unicode in which the English language characters (ASCII) require only a single byte to be represented, and in which other languages can have characters that are represented with up to 4 bytes. </li>
+<li>This is the most common character set used in HTML and XML documents.</li>
+</ul>
+
+<h3> Using Special Characters (HTML Entities)</h3>
+<ul>
+    <li>These characters can be displayed in your content by using either the entity name or entity number as follows.</li>
+</ul>
+<code>
+    <xmp>
+        &entity_name; or &#entity_number;
+    </xmp>
+</code>
+
+<a href="https://dev.w3.org/html5/html-author/charref">HTML Entity reference</a>
+
+<p>commonly sued entities</p>
+
+<code>
+    <xmp>
+        &copy; - copyright
+        &amp; - ampersand
+        &trade; - trademark
+        &nbsp; - nonbreaking space
+    </xmp>
+</code>
+
+<h3>Nonbreaking Space</h3>
+<ul>
+    <li>If you try to embed a series of spaces into your HTML document, the browser normalizes contiguous white-space characters (such as spaces, tabs, and line breaks) and renders only a single space. </li>
+    <li>When you want to display several spaces, you can use the nonbreaking space character. </li>
+    <li>Nonbreaking space is also known as nonbreak space, nonbreakable space, and hard space. </li>
+<li>In addition to preventing the collapse of contiguous whitespace, the nonbreaking space prevents the automatic line break between words that you want to keep together on the same line.</li>
+    <li>Consider an HTML document in which you want to display 10 mph, where there is a space between the number 10 and the mph. You want to ensure that mph will not be separated from the number 10 by being moved to the next line.</li>
+    <li>In your HTML document, use <code>10&nbsp;mph</code> to keep the number 10 and mph together.</li>
+</ul>
+
+
+<h3> Embedding HTML by using inline frames</h3>
+
+<ul>
+    <li>You can use the<code>iframe</code>  element to embed an inline frame that contains an HTML document within the current HTML document. </li>
+    <li>The <code>iframe</code> element creates a nested browser context into which another HTML document can be loaded.Loading an HTML document creates a browsing context for that document. </li>
+    <li>The document that contains an <code>iframe</code>  is contained within the parent browser context, where the document that is loaded into the <code>iframe</code> element is within the nested browser context.</li>
+</ul>
+
+<p>You can navigate nested browsing contexts by using the following properties of the window object.</p>
+<ul>
+    <li><b>window.top</b>. A WindowProxy object representing the top-level browsing context</li>
+    <li><b>window.parent</b>. A WindowProxy object representing the parent browsing context</li>
+    <li><b>window.frameElement</b>. An element that represents the browsing context container but returns null if there isn’t one</li>
+</ul>
+
+<ul>
+    <li>The <code>iframe</code> element has a src (source) attribute and a name attribute. The src attribute can be set to the absolute or relative URL of the HTML document that you want to include, as shown in the following sample.</li>
+</ul>
+
+<code>
+    <xmp>
+        <iframe src="menu.html"></iframe>
+    </xmp>
+</code>
+
+<ul>
+    <li>The name attribute sets the browsing context name, which is useful when you need to reference the <code>iframe </code>element, possibly as the target of a hyperlink, </li>
+    <li>A valid browsing context name is any string with at least one character that does not start with an underscore because the underscore is used for these special key names: _blank, _self, _parent, and _top.</li>
+</ul>
+
+<h3> Sandboxing Embedded content</h3>
+<ul>
+    <li>Sandboxing is a means for preventing malware and annoyances such as pop-ups from being introduced when the content is embedded on your HTML page. The <code>iframe</code> element provides the sandbox attribute for this purpose.</li>
+    <li>The sandbox attribute places a set of extra restrictions on any content hosted by the iframe. </li>
+    <li>When the sandbox attribute is set, the content is treated as being from a unique and potentially dangerous origin. </li>
+<li> Forms and scripts are disabled, and links are prevented from targeting other browsing contexts. </li>
+</ul>
+
+<p>Consider the following example</p>
+
+<code>
+    <xmp>
+        <iframe sandbox src="http://someOtherDomain.net/content">
+        </iframe>
+
+    </xmp>
+</code>
+
+<ul>
+    <li>In the example, the source is referencing potentially hostile content in a different domain. This content will be affected by all the normal cross-site restrictions. </li>
+    <li>In addition, the content will have scripting, plug-ins, and forms disabled. The content cannot navigate any frames or windows other than itself.</li>
+</ul>
+
+<p>The restrictions can be overridden by space-separating any of the following.</p>
+<ul>
+    <li><b>allow-forms</b>. Enables forms</li>
+    <li><b>allow-same-origin</b>. Allows the content to be treated as being from the same origin instead of forcing it into a unique origin</li>
+    <li><b>allow-scripts</b>. Enables scripts except pop-ups</li>
+    <li><b>allow-top-navigation</b>. Allows the content to navigate its top-level browsing context</li>
+</ul>
+
+<p>In the following example, allow-same-origin, allow-forms, and allow-scripts are enabled. On the surface, it might seem that the sandbox is not providing any protection, but the sandbox still disabling plug-ins and pop-ups.</p>
+<code>
+    <xmp>
+        <iframe sandbox="allow-same-origin allow-forms allow-scripts"
+                src="http://otherContent.com/content.html"></iframe>
+    </xmp>
+</code>
+
+<h3>Seamless content embedding</h3>
+<ul>
+    <li>The <code>iframe</code>  tag has a seamless attribute that indicates that the source content is to appear as though it’s part of the containing document. </li>
+    <li>This means that the <code>iframe</code> element will not have borders and scrollbars. </li>
+    <li>The seamless attribute is a Boolean attribute, so its presence on the <code>iframe</code> tag indicates that you want this option, but there are three ways to set a Boolean attribute. </li>
+</ul>
+<p>Here are three ways to specify seamless embedding of content.</p>
+<code>
+    <xmp>
+        <iframe seamless="seamless" src="http://otherContent.com/content.html"></iframe>
+        <iframe seamless="" src="http://otherContent.com/content.html"></iframe>
+        <iframe seamless src="http://otherContent.com/content.html"></iframe>
+    </xmp>
+</code>
+
+<b>At the time of this writing, the seamless attribute is not supported on any browsers, but its intent is to blend the external content into the current HTML document so the HTML page does not look like it has embedded content. The alternative is to use CSS to obtain a similar presentation.</b>
+
+<h3>Working with hyperlinks</h3>
+
+<ul>
+    <li>The <code>a</code> element creates a link to an external HTML document (external link) or jumps to a location in the current HTML document (internal link).</li>
+    <li>The content of the <code>a</code> element is displayed in the browser with the following default appearance.</li>
+</ul>
+
+<ul>
+    <li><b>Unvisited link<b>. Underlined and blue</li>
+    <li><b>Visited link<b>. Underlined and purple</li>
+    <li><b>Active link<b>. Underlined and red</li>
+</ul>
+
+<ul>
+    <li>The <code>a</code> element has the href attribute, which you usually use to specify the link destination. </li>
+    <li>If the link is external, the href can be populated with either a relative or absolute URL as follows.</li>
+    <li></li>
+</ul>
+<code>
+    <xmp>
+        <a href="ExpenseReports.html">Expense Report Page</a>
+        <a href="http://www.contoso.com/SalesReports.html">Sales Report Page</a>
+    </xmp>
+</code>
+
+<ul>
+    <li>If the link is internal, the href will contain the hash (#) symbol followed by the id of the tag that you want to jump to.</li>
+    <li>If you use only the hash symbol, clicking the link takes you to the top of the HTML document.</li>
+</ul>
+
+<p>Here are two examples.</p>
+
+<code>
+    <xmp>
+        <a href="#">Top</a>
+        <a href="#BillingAddress">Go To Billing Address</a>
+    </xmp>
+</code>
+
+<h3> Specifying the hyperlink target</h3>
+<ul>
+    <li>When you’re on a webpage and you click a hyperlink to an external resource, the external resource opens in the current browser window. </li>
+    <li>If the external link is to a page on your website, this behavior probably makes sense. If the external link is to a different website, you might want to open a new browser window. </li>
+    <li>By using the target attribute, you can control the link behavior by assigning one of the following.</li>
+</ul>
+
+<ul>
+    <li>_blank. Open in a new browser window</li>
+    <li>_parent. Open in the parent frame or window</li>
+    <li>_self. Open in the current window or frame (default)</li>
+    <li>_top. Open in the topmost frame, thus replacing the contents of the window</li>
+</ul>
+<code>
+    <xmp>
+        <iframe_name>. Open in the <iframe> element with matching name attribute
+    </xmp>
+</code>
+
+<p>When you have a menu with hyperlinks that shows on every page, you might want to create an <iframe> element with its name attribute set to content and then set the target of all menu links to be content so the pages load into the <code>iframe</code>  element as shown in the following example.</p>
+<code>
+    <xmp>
+        Main Menu<br />
+        <a href="Calendar.html" target="content">Calendar</a><br />
+        <a href="HumanResources.html" target="content">Human Resources</a><br />
+        <a href="ExpenseReports.html" target="content">Expenses</a><br />
+        <a href="Commissions.html" target="content">Commissions</a><br />
+        <br />
+        <iframe name="content"></iframe>
+    </xmp>
+</code>
+
+<h3>Sending email with hyperlinks</h3>
+
+<ul>
+    <li>You can use mailto protocol to send email messages.</li>
+    <li>The mailto URL accepts the following parameters: subject, cc, bcc, and body.</li>
+    <li>The parameters can be entered in any order by adding a question mark (?) after the email address and separating the parameters with the ampersand (&). </li>
+</ul>
+
+<p>Some examples of an email hyperlink are as follows.</p>
+
+<code>
+    <xmp>
+        <!-- basic mailto -->
+        <a href="mailto:sales@contoso.com">Contact Sales</a>
+
+        <!-- add the name, notice that email is wrapped with &lt; and &gt; -->
+        <a href="mailto:Joe&lt;sales@contoso.com&gt;">Contact Joe in Sales</a>
+
+        <!-- multiple recipients comma separated -->
+        <a href="mailto:sales@contoso.com,service@contoso.com">Contact Sales and Service</a>
+
+        <!-- add carbon copy -->
+        <a href="mailto:sales@contoso.com?cc=service@contoso.com">Contact Sales cc Service</a>
+
+        <!-- add blind carbon copy -->
+        <a href="mailto:sales@contoso.com?bcc=service@contoso.com">Contact Sales</a>
+
+        <!-- basic mailto with message -->
+        <a href="mailto:sales@contoso.com?body=call me.">Contact Sales with call me message</a>
+
+        <!-- basic mailto with multi line message -->
+        <a href="mailto:sales@contoso.com?body=call me.%0AThanks">Contact Sales with multi line
+            message</a>
+
+        <!-- basic mailto with subject and message -->
+        <a href="mailto:sales@contoso.com?subject=hi&body=call me.">Contact Sales with hi subject
+            and call me message</a>
+    </xmp>
+
+    <h3> Adding images to your HTML Document</h3>
+
+    <ul>
+        <li>to embed an image in your HTML document, use the<code>img</code>  element.</li>
+        <li>The<code>img</code> element does not have an ending tag; it’s a void element</li>
+        <li>The<code>img</code> element has required attributes of src (abbreviation for source) and alt (abbreviation for alternate). </li>
+        <li>Use the src attribute to provide an absolute or relative URL reference to the image that is to be displayed.</li>
+        <li>Use the alt attribute to provide alternate text to be displayed when the image is not available due to slow connection or other mishap.</li>
+    </ul>
+<p>The following is an example of the<code>img</code> element.</p>
+    <code>
+        <xmp>
+            <img src="/images/logo.png" alt="logo" />
+            <img src="http://search.microsoft.com/global/search/en-
+us/PublishingImages/bing_logo.png" alt="Bing Logo" />
+        </xmp>
+    </code>
+    <ul>
+        <li>It’s important to understand that the image is not embedded in the HTML document. Instead, you provide a reference to the image file. </li>
+        <li>When the browser reads your HTML document, the browser will reach your <code>img</code> element and retrieve the image based on the src attribute. </li>
+        <li>When the image is retrieved, the browser will merge the image into the final rendering that is displayed into the browser window.</li>
+        <li>If the browser cannot display the image, it will display the alternate text.</li>
+    </ul>
+
+    <h3> Image File Types </h3>
+
+    <p>When using the <code>img</code> element, you can supply JPEG (.jpg or .jpeg), GIF (.gif), PNG (.png), or SVG (.svg) files. The following is a brief description of each file type that should help you decide which file type to use for your application.</p>
+    <ul>
+        <li><b>JPG</b>. Also known as JPEG, this is best for photographs because it offers high compression and up to 16.8 million color combinations, but the compression algorithm is lossy, meaning that you lose detail every time you save the file.</li>
+        <li><b>GIF</b>. GIF is great to use on small images that have a fixed number of colors. GIF also supports transparent color. GIF uses lossless compression and is best for logos and worst for photos. GIF also supports the ability to encapsulate multiple images in one file, which is commonly used to provide animated GIFs.</li>
+        <li><b>PNG</b>. PNG is a great all-around file type due to its lossless high compression. PNG files can be 48-bit true color or 16-bit grayscale. PNG not only supports transparent color but also offers variable transparency. Photos aren’t compressed to be as small as JPG photos, but being lossless makes it worth the extra size in many scenarios. You might use PNG as your storage type for photos that you want to edit, but when displaying them on the web, you might want to save the PNG as JPG to achieve the best compression.</li>
+        <li><b>SVG</b>. SVG is Scalable Vector Graphics and is great for drawings but not for photos. SVG images can be scaled up or down without losing detail because the file contains the instructions to draw the image, as opposed to the other file types that contain a raster-based image. Raster-based images are composed of color dots that make up the image. If you need to scale a raster-based image up or down, you will see that in color, dots are re-sampled, and the image typically ends up looking blocky.</li>
+    </ul>
+
+    <h3>Creating Image Links</h3>
+    <ul>
+        <li>If you create a hyperlink and the hyperlink’s content is an <code>img</code> element, you have created an image that can be clicked—an image link. </li>
+    </ul>
+
+    <p>Here is an example of an image link.</p>
+
+    <code>
+        <xmp>
+            <a href="Investments.html"><img src="CurrencySymbol.png" /></a>
+        </xmp>
+    </code>
+
+    <h3> Creating an Image Map</h3>
+
+    <ul>
+        <li>You can create a clickable image map on your HTML document by using the <code>map</code> element. </li>
+        <li>It contains <code>area</code> elements that define clickable regions on the image.</li>
+        <li>The <code>map</code> element has a name attribute that must be set. On an <code>img</code> element, set the usemap attribute to the<code>map</code>element’s name to create a relationship between the image and the map.</li>
+    <li>In the<code>map</code>  element, you define <code>area</code> elements by using the shape, coords, href, and alt attributes.</li>
+        <li>The <code>area</code> element is a void element, so you use a self-closing tag. The shape attribute is set to rect, circle, poly, or default, where default is an<code>area</code> element whose size is the same as the image and is triggered if no specific <area> is defined for coordinates where you clicked.</li>
+        <li>The coords attribute will contain x and y coordinates where 0, 0 is the top-left corner of the image. The coords attribute is set according to the shape as follows.</li>
+    </ul>
+
+    <ul>
+        <li><b>rect</b> x1, y1, x2, and y2 specify the coordinates of the left, top, right, and bottom.</li>
+        <li><b>circle</b>> x, y, and radius specify the coordinates of the center and the radius.</li>
+        <li><b>poly</b> x1, y1, x2, y2,.., xn, and yn specify the coordinates of the edges. The first and last coordinate pairs should be the same to close the polygon, but if they aren’t the same, the browser will add a closing pair.</li>
+    </ul>
+
+    <ul>
+        <li>The href attribute is the same as the href attribute on the<code>a</code> element and can be set to an absolute or relative URL.</li>
+        <li>The alt attribute is set to alternate text to be displayed and is required when the href attribute is set.</li>
+        <li>The following is an example of creating an image map with its areas and assigning the image map to an image.</li>
+    </ul>
+
+    <code>
+        <xmp>
+            <img src ="worldmap.gif" width="145" height="126"
+                 alt="World Map" usemap ="#countries" />
+
+            <map name="countries">
+                <area shape="rect" coords="10,15,30,25"
+                      href="USA.html" alt="USA" />
+                <area shape="circle" coords="95,40,20"
+                      href="China.html" alt="China" />
+                <area shape="poly" coords="97,76,115,76,113,83,105,90,97,76"
+                      href="Australia.html" alt="Australia" />
+                <area shape="default" href="InvalidChoice.html" alt="Invalid" />
+            </map>
+        </xmp>
+    </code>
+
+    <h3>The <code>embed</code> Tag</h3>
+    <ul>
+        <li>Although the HTML 4.01 specification did not support the <code>embed</code> tag, most browsers continued support due to the installed base and the ease of use.</li>
+        <li>In HTML5, both tags exist. The <code>object</code>tag provides more functionality, whereas the<code>embed</code> tag is easier to use.</li>
+        <li>For example, if you want to play a Flash file, you can use the <code>embed</code> tag as follows.</li>
+    </ul>
+    <code>
+        <xmp>
+            <embed src="myFlashFile.swf" >
+            </embed>
+        </xmp>
+    </code>
+
+    <p>The <code>embed</code> tag has the following attributes.</p>
+
+    <ul>
+        <li><b>height</b>. Specifies the height in pixels of the embedded content</li>
+        <li><b>src</b>. Specifies the URL of the external file to embed</li>
+        <li><b>type</b>. Specifies the MIME type of the embedded content</li>
+        <li><b>width</b>. Specifies the width in pixels of the embedded content</li>
+    </ul>
+
+    <p>For browsers that don’t support the<code>embed</code> tag, you can add fallback content into the element as follows.</p>
+
+    <code>
+        <xmp>
+            <embed src="myFlashFile.swf" >
+            <a href="/go/getflashplayer/">
+                <img src=http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif
+                     alt="Get Adobe Flash player" />
+            </a>
+            </embed>
+        </xmp>
+    </code>
+
+    <h3>The <code>object</code> tag</h3>
+
+    <p>The <code>object</code> tag embeds an object within an HTML document. You can embed multimedia such as audio, video, Java applets, ActiveX, PDF, and Flash in your webpages. The <code>object</code> tag contains the following attributes.</p>
+
+    <ul>
+        <li><b>data</b>. Supplies the URL of the resource to be used by the object</li>
+        <li><b>form</b>. Indicates one or more form ids to which the object belongs</li>
+        <li><b>height</b>. Specifies the height in pixels of the object</li>
+        <li><b>name</b>. Defines the name of the object</li>
+        <li><b>type</b>. Defines the MIME type of data specified in the data attribute</li>
+        <li><b>usemap</b>. Indicates the name of a client-side image map to be used with the object
+        </li>
+        <li><b>width</b>. Specifies the width in pixels of the object</li>
+        <li>At a minimum, you must define either the data or type attribute.</li>
+    </ul>
+
+    <ul>
+        <li>The <code>object</code> tag can be used within the <code>body</code> element only. </li>
+        <li>You might find <code>object</code> examples that implement many more attributes than are defined in this list because older versions of HTML supported other attributes, but HTML5 supports only the attributes that are listed plus the global attributes.</li>
+        <li>You can also use the <code>object</code> tag to embed another webpage in your HTML document. The following is an example of using the <code>object</code> element to embed a webpage in your HTML document.</li>
+        <li></li>
+    </ul>
+
+    <code>
+        <xmp>
+            <object id="headerContent" standby="loading header..."
+                    title="loading header..." width="100%" height="15%"
+                    type="text/html" data="Header.aspx"></object>
+        </xmp>
+    </code>
+
+    <ul>
+        <li>As a rule, consider using the <code>iframe</code> tag when embedding a webpage from another domain into your HTML document by using sandboxing. </li>
+        <li>It’s made for that purpose, whereas the <code>object</code> tag is a more general-purpose tag.</li>
+        <li>The <code>object</code> tag behaves differently with different browsers, and you might find that features such as tooltips work only with the <code>iframe</code> tag and not with the <code>object</code> tag.</li>
+        <li>It is possible to embed images and image maps in your HTML document by using the <code>object</code> tag, but you should avoid doing so. It’s best to use the <code>img</code> tag to embed images.</li>
+        <li>The text within the <code>object</code> element is alternate text to be displayed for browsers that do not support the <code>object</code> tag.</li>
+    </ul>
+<h3>Passing parameters to an object</h3>
+
+    <ul>
+        <li>Because the <code>object</code> tag can represent any object, the <code>param</code> tag enables you to pass data to the object. </li>
+        <li>You can use one or more <code>param</code> tags to pass parameters to plug-ins that have been embedded with the <code>object</code> tag. </li>
+        <li>The <code>param</code> tags must be before any alternate text that is within the <code>object</code> element.</li>
+        <li>The <code>param</code> tag has a name and a value attribute, and both are required for each <code>param</code> tag.</li>
+    </ul>
+
+    <p>The following is an example of using a <code>param</code> tag with an audio file to keep the audio file from automatically playing when the page is loaded.</p>
+    <code>
+        <xmp>
+            <object data="tada.wav">
+                <param name="autoplay" value="false" />
+            </object>
+        </xmp>
+    </code>
+
+    <p>In addition to using the <code>iframe</code> tag to create a nested browser context, you can use the <code>object</code> tag, but this is not supported on all browsers, so you should use the <code>iframe</code> tag.</p>
+    <!-- reusable -->
+<!--
+<code></code>
+<code>
+    <xmp>
+
+</xmp>
+</code>
+
+<ul>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+-->
+</body>
+</html>

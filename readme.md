@@ -16,32 +16,33 @@ Construct markup that uses meta data elements
 Construct well-formed markup that conforms to industry best practices 
 -DOCTYPE declaration; HTML; head; body; proper syntax, including closing and commonly used symbols; comments
 
-- [ ] Understanding HTML, XHTML, and HTML5
-- [ ] Introducing semantic markup
-- [ ] Working with elements
-- [ ] Adding attributes to elements
-- [ ] Working with Boolean attributes
-- [ ] HTML5 global attribute reference
-- [ ] Working with self closing tags
-- [ ] Working with void elements
-- [ ] Adding expando attributes
-- [ ] Adding conditional comments
-- [ ] Non Breaking space
-- [ ] Basic document structure
-- [ ] Using special characters (HTML entities)
-- [ ] Embedding HTML by using inline frames
-- [ ] Sandboxing embedded content
-- [ ] Seamless content embedding
-- [ ] Working with hyperlinks
-- [ ] Specifying the hyperlink target
-- [ ] Sending email with hyperlinks
-- [ ] Adding images to your HTML document
-- [ ] Image file types
-- [ ] Creating image links
-- [ ] creating an image
-- [ ] The `<embed>` tag
-- [ ] The `<object>` tag
-- [ ] Passing parameters to an object
+- [x] Understanding HTML, XHTML, and HTML5
+- [x] Introducing semantic markup
+- [x] Working with elements
+- [x] Adding attributes to elements
+- [x] Working with Boolean attributes
+- [x] HTML5 global attribute reference
+- [x] Working with self closing tags
+- [x] Working with void elements
+- [x] Adding expando attributes
+- [x] Adding comments
+- [x] Adding conditional comments
+- [x] Non Breaking space
+- [x] Basic document structure
+- [x] Using special characters (HTML entities)
+- [x] Embedding HTML by using inline frames
+- [x] Sandboxing embedded content
+- [x] Seamless content embedding
+- [x] Working with hyperlinks
+- [x] Specifying the hyperlink target
+- [x] Sending email with hyperlinks
+- [x] Adding images to your HTML document
+- [x] Image file types
+- [x] Creating image links
+- [x] creating an image map
+- [x] The `<embed>` tag
+- [x] The `<object>` tag
+- [x] Passing parameters to an object
  
 #### Understand CSS Fundamentals
 
