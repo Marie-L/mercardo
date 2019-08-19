@@ -161,26 +161,26 @@ Construct and analyze markup that plays video and audio
 
 - Video; audio; track; source; simple iframe implementations
 
-- [ ] Playing video
-- [ ] Video formats
-- [ ] Implementing the `<video>` element
-- [ ] Setting source
-- [ ] Configuring the `<video>` element
-- [ ] Accessing tracks
-- [ ] Using the WebVTT format
-- [ ] Adding support for WebVTT to IIS Express
-- [ ] Audio formats
-- [ ] The `<audio>` element
-- [ ] Setting the source
-- [ ] Configuring the `<audio>` element
-- [ ] Using the HTMLMediaElement Object
-- [ ] Understanding the HTMLMediaElement methods
-- [ ] Using HTMLMediaElement properties
-- [ ] Subscribing to HTMLMediaElement events
-- [ ] Using media control
-- [ ] Drawing by using the `<canvas>` element
-- [ ] The `<canvas>` element reference
-- [ ] CanvasRenderingContext2D context object reference
+- [x] Playing video
+- [x] Video formats
+- [x] Implementing the `<video>` element
+- [x] Setting source
+- [x] Configuring the `<video>` element
+- [x] Accessing tracks
+- [x] Using the WebVTT format
+- [x] Adding support for WebVTT to IIS Express
+- [x] Audio formats
+- [x] The `<audio>` element
+- [x] Setting the source
+- [x] Configuring the `<audio>` element
+- [x] Using the HTMLMediaElement Object
+- [x] Understanding the HTMLMediaElement methods
+- [x] Using HTMLMediaElement properties
+- [x] Subscribing to HTMLMediaElement events
+- [x] Using media control
+- [x] Drawing by using the `<canvas>` element
+- [x] The `<canvas>` element reference
+- [x] CanvasRenderingContext2D context object reference
 - [ ] Implementing the canvas
 - [ ] Using scalable vector graphics
 - [ ] Using `<svg>` elements
@@ -226,25 +226,26 @@ Analyze styles that implement a simple responsive layout
 
 - Units of measure; responsive effects with CSS, including viewport and media query; percentages versus pixels; frameworks and templates; max width
 
-- [ ] Working with CSS properties
-- [ ] Working with CSS colors
-- [ ] Using the rgb function
-- [ ] Using transparency
-- [ ] Using the hsl function
-- [ ] Working with text
-- [ ] Setting the font-family property
-- [ ] Specify the font size
-- [ ] Working with the CSS box model
-- [ ] Setting the border, padding and margin properties
-- [ ] Positioning `<div>` elements
-- [ ] Using the static position
-- [ ] Using the relative position
-- [ ] Using the absolute position
-- [ ] Using the fixed position
-- [ ] Using the float property
-- [ ] Using the clear property
-- [ ] Using the box-sizing property
-- [ ] Centering content in the browser window
+- [x] Working with CSS properties
+- [x] Working with CSS colors
+- [x] Using the rgb function
+- [x] Using transparency
+- [x] Using the rgba function
+- [x] Using the hsl function
+- [x] Working with text
+- [x] Setting the font-family property
+- [x] Specify the font size
+- [x] Working with the CSS box model
+- [x] Setting the border, padding and margin properties
+- [x] Positioning `<div>` elements
+- [x] Using the static position
+- [x] Using the relative position
+- [x] Using the absolute position
+- [x] Using the fixed position
+- [x] Using the float property
+- [x] Using the clear property
+- [x] Using the box-sizing property
+- [x] Centering content in the browser window
 
 
 
