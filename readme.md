@@ -57,37 +57,38 @@ Construct well-formed style sheets that conform to industry best practices
 
 - Reusing rules and rule sets; commenting; testing on multiple browsers; web safe fonts
 
-- [ ] Introducing CSS3
-- [ ] Defining and applying a style
-- [ ] Adding comments within a style sheet
-- [ ] Creating an inline style
-- [ ] Creating and embedded style
-- [ ] Creating an external style sheet
-- [ ] Using media to specify the target device
-- [ ] Imported style sheets from other style sheets
-- [ ] Using @font-face rule to import fonts
-- [ ] Creating a selector element type selector
-- [ ] Creating an id selector
-- [ ] Creating a class selector
-- [ ] Using universal selector
-- [ ] Using descendent selectors
-- [ ] Using child selectors
-- [ ] Using pseudo-class and pseudo-element selectors
-- [ ] Grouping selectors
-- [ ] Using subsequent adjacent sibling selectors
-- [ ] Using the subsequent sibling selector
-- [ ] Using an attribute selector
-- [ ] Using an attribute value selector
-- [ ] Using the attribute contains value selector
-- [ ] Using the attribute value starts with selector
-- [ ] Using the attribute contains value in list selector
-- [ ] Understanding the browser's built-in styles
-- [ ] Extending browser styles with user styles
-- [ ] Working with importing styles
-- [ ] How do styles cascade?
-- [ ] Using specificity
-- [ ] Understanding inheritance
-- [ ] Using the inherit value
+- [x] Introducing CSS3
+- [x] Defining and applying a style
+- [x] Adding comments within a style sheet
+- [x] Creating an inline style
+- [x] Creating and embedded style
+- [x] Creating an external style sheet
+- [x] Using media to specify the target device
+- [x] Imported style sheets from other style sheets
+- [x] Using @font-face rule to import fonts
+- [x] Creating an element type selector
+- [x] Creating an id selector
+- [x] Creating a class selector
+- [x] Using universal selector
+- [x] Using descendent selectors
+- [x] Using child selectors
+- [x] Using pseudo-class and pseudo-element selectors
+- [x] Grouping selectors
+- [x] Using subsequent adjacent sibling selectors
+- [x] Using the subsequent sibling selector
+- [x] Using an attribute selector
+- [x] Using an attribute value selector
+- [x] Using the attribute contains value selector
+- [x] Using the attribute value starts with selector
+- [x] Using the attribute value ends with selector
+- [x] Using the attribute contains value in list selector
+- [x] Understanding the browser's built-in styles
+- [x] Extending browser styles with user styles
+- [x] Working with importing styles
+- [x] How do styles cascade?
+- [x] Using specificity
+- [x] Understanding inheritance
+- [x] Using the inherit value
 
 #### Structure Documents Using HTML
 
