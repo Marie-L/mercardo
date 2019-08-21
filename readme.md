@@ -108,45 +108,45 @@ Construct and analyze markup that uses form elements
 
 - Form attributes; action; method; submission methods; accessibility; input types and restrictions; select; textarea; button; output; option; datalist; fieldset
 
-- [ ] Why semantic markup ?
-- [ ] Browser support for HTML5
-- [ ] Creating semantic HTML5 documents
-- [ ] Creating an HTML layout container
-- [ ] Using the `<header` element
-- [ ] Using the `<footer>` element
-- [ ] Using the `<nav>` element
-- [ ] Using the `<aside>` element
-- [ ] Using roles
-- [ ] Controlling format by using the `<div>` element
-- [ ] Adding thematic breaks
-- [ ] Using the `<b>` element
-- [ ] Using the `<strong>` element
-- [ ] Using the `<i>` element
-- [ ] Using the `<em>` element
-- [ ] Using the `<abbr` element for abbreviations and acronyms
-- [ ] Using the `<address>` element
-- [ ] Quotations and citation
-- [ ] Documenting code by using the `<code>` and `<samp>` elements
-- [ ] Displaying preformatted content by using the `<pre>` element 
-- [ ] Using the `<var>` element
-- [ ] Using the `<br/>` and `<wbr/>` elements
-- [ ] Using the `<dfn>` element to define a term
-- [ ] Working with figures
-- [ ] Working with a `<summary>` and `<details>` elements
-- [ ] Understanding other annotations
-- [ ] Using language elements
-- [ ] Ordered lists
-- [ ] Unordered lists
-- [ ] Description lists
-- [ ] Custom lists
-- [ ] Working with tables
-- [ ] Creating a basic table
-- [ ] Adding header cells 
-- [ ] Styling the table headers
-- [ ] Declaring the header, footer, and table body
-- [ ] Creating irregular tables
-- [ ] Adding a caption to a table
-- [ ] Styling columns
+- [x] Why semantic markup ?
+- [x] Browser support for HTML5
+- [x] Creating semantic HTML5 documents
+- [x] Creating an HTML layout container
+- [x] Using the `<header` element
+- [x] Using the `<footer>` element
+- [x] Using the `<nav>` element
+- [x] Using the `<aside>` element
+- [x] Using roles
+- [x] Controlling format by using the `<div>` element
+- [x] Adding thematic breaks
+- [x] Using the `<b>` element
+- [x] Using the `<strong>` element
+- [x] Using the `<i>` element
+- [x] Using the `<em>` element
+- [x] Using the `<abbr` element for abbreviations and acronyms
+- [x] Using the `<address>` element
+- [x] Quotations and citation
+- [x] Documenting code by using the `<code>` and `<samp>` elements
+- [x] Displaying preformatted content by using the `<pre>` element 
+- [x] Using the `<var>` element
+- [x] Using the `<br/>` and `<wbr/>` elements
+- [x] Using the `<dfn>` element to define a term
+- [x] Working with figures
+- [x] Working with a `<summary>` and `<details>` elements
+- [x] Understanding other annotations
+- [x] Using language elements
+- [x] Ordered lists
+- [x] Unordered lists
+- [x] Description lists
+- [x] Custom lists
+- [x] Working with tables
+- [x] Creating a basic table
+- [x] Adding header cells 
+- [x] Styling the table headers
+- [x] Declaring the header, footer, and table body
+- [x] Creating irregular tables
+- [x] Adding a caption to a table
+- [x] Styling columns
 
 
 #### Present Multimedia Using HTML
@@ -181,32 +181,14 @@ Construct and analyze markup that plays video and audio
 - [x] Drawing by using the `<canvas>` element
 - [x] The `<canvas>` element reference
 - [x] CanvasRenderingContext2D context object reference
-- [ ] Implementing the canvas
-- [ ] Using scalable vector graphics
-- [ ] Using `<svg>` elements
-- [ ] Creating a path
-- [ ] Drawing circles
-- [ ] Displaying SVG files by using the `<img>` element
-- [ ] Making the SVG scalable
+- [x] Implementing the canvas
+- [x] Using scalable vector graphics
+- [x] Using `<svg>` elements
+- [x] Creating a path
+- [x] Drawing circles
+- [x] Displaying SVG files by using the `<img>` element
+- [x] Making the SVG scalable
 
-
-_canvas lessons for 70 - 480 exam_
-
-- [ ] Drawing rectangles
-- [ ] Configuring the drawing state
-- [ ] Setting fillStyle
-- [ ] Setting lineWidth
-- [ ] Setting lineJoin
-- [ ] Setting strokeStyle
-- [ ] Saving and restoring the drawing state
-- [ ] Drawing by using paths
-- [ ] Drawing lines
-- [ ] Drawing rectangles
-- [ ] Ordering the fill and the stroke method calls
-- [ ] Drawing arcs by using the arcTo method
-- [ ] Drawing arcs by using the arc method
-- [ ] Drawing text
-- [ ] Drawing with images
 
 
 #### Style Web Pages Using CSS
@@ -253,10 +235,28 @@ Analyze styles that implement a simple responsive layout
 
 #### 70 - 480
 
-- [ ] Implement and Manipulation Document Structures and Objects
+- Implement and Manipulation Document Structures and Objects
 
-- [ ] Implement Program Flow
+- Implement Program Flow
 
-- [ ] Access and Secure Data
+- Access and Secure Data
 
-- [ ] Use CSS3 in Applications
+-  Use CSS3 in Applications
+
+_canvas lessons for 70 - 480 exam_
+
+- [ ] Drawing rectangles
+- [ ] Configuring the drawing state
+- [ ] Setting fillStyle
+- [ ] Setting lineWidth
+- [ ] Setting lineJoin
+- [ ] Setting strokeStyle
+- [ ] Saving and restoring the drawing state
+- [ ] Drawing by using paths
+- [ ] Drawing lines
+- [ ] Drawing rectangles
+- [ ] Ordering the fill and the stroke method calls
+- [ ] Drawing arcs by using the arcTo method
+- [ ] Drawing arcs by using the arc method
+- [ ] Drawing text
+- [ ] Drawing with images
